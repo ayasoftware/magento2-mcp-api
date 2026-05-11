@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/mg_indexer_reindex" method="POST">
+        <service class="Ayasoftware\McpApi\Api\IndexerManagementInterface" method="reindex"/>
+        <resources>
+            <resource ref="Ayasoftware_McpApi::indexer"/>
+        </resources>
+    </route>
+    <route url="/V1/mg_indexer_info" method="GET">
+        <service class="Ayasoftware\McpApi\Api\IndexerManagementInterface" method="info"/>
+        <resources>
+            <resource ref="Ayasoftware_McpApi::indexer"/>
+        </resources>
+    </route>
+    <route url="/V1/mg_indexer_info/:indexerId" method="GET">
+        <service class="Ayasoftware\McpApi\Api\IndexerManagementInterface" method="infoById"/>
+        <resources>
+            <resource ref="Ayasoftware_McpApi::indexer"/>
+        </resources>
+    </route>
+    <route url="/V1/mg_indexer_reindex/:indexerId" method="POST">
+        <service class="Ayasoftware\McpApi\Api\IndexerManagementInterface" method="reindexById"/>
+        <resources>
+            <resource ref="Ayasoftware_McpApi::indexer"/>
+        </resources>
+    </route>
+    <route url="/V1/mg_indexer_reindex_search" method="POST">
+        <service class="Ayasoftware\McpApi\Api\IndexerManagementInterface" method="reindexSearch"/>
+        <resources>
+            <resource ref="Ayasoftware_McpApi::indexer"/>
+        </resources>
+    </route>
+    <route url="/V1/mg_indexer_status" method="GET">
+        <service class="Ayasoftware\McpApi\Api\IndexerManagementInterface" method="status"/>
+        <resources>
+            <resource ref="Ayasoftware_McpApi::indexer"/>
+        </resources>
+    </route>
+    <route url="/V1/mg_indexer_status/:indexerId" method="GET">
+        <service class="Ayasoftware\McpApi\Api\IndexerManagementInterface" method="statusById"/>
+        <resources>
+            <resource ref="Ayasoftware_McpApi::indexer"/>
+        </resources>
+    </route>
+</routes>
