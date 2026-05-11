@@ -1,8 +1,10 @@
 <?xml version="1.0"?>
-<acl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
-    <resources>
-        <resource id="Magento_Backend::admin">
-            <resource id="Ayasoftware_McpApi::indexer" title="Indexer Management" sortOrder="10"/>
-        </resource>
-    </resources>
-</acl>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin" title="Magento Admin" translate="title">
+                <resource id="Ayasoftware_McpApi::indexer" title="Indexer Management" translate="title" sortOrder="10"/>
+            </resource>
+        </resources>
+    </acl>
+</config>
