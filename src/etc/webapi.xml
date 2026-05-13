@@ -42,4 +42,10 @@
             <resource ref="Ayasoftware_McpApi::indexer"/>
         </resources>
     </route>
+    <route url="/V1/mg_coupon/:couponId" method="PUT">
+        <service class="Ayasoftware\McpApi\Api\CouponManagementInterface" method="updateCoupon"/>
+        <resources>
+            <resource ref="Ayasoftware_McpApi::coupon"/>
+        </resources>
+    </route>
 </routes>

@@ -1,11 +1,15 @@
 {
   "name": "ayasoftware/magento2-mcp-api",
-  "description": "Magento 2 MCP API",
+  "description": "Magento 2 MCP API - Additional REST API endpoints for Magento 2 MCP Server",
+  "version": "1.1.0",
   "license": "MIT",
   "type": "magento2-module",
   "authors": [],
   "require": {
-    "php": "^8.3 || ^8.4"
+    "php": "^8.3 || ^8.4",
+    "magento/framework": "*",
+    "magento/module-indexer": "*",
+    "magento/module-sales-rule": "*"
   },
   "autoload": {
     "files": [
