@@ -2,4 +2,5 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Ayasoftware\McpApi\Api\IndexerManagementInterface" type="Ayasoftware\McpApi\Model\IndexerManagement"/>
     <preference for="Ayasoftware\McpApi\Api\CouponManagementInterface" type="Ayasoftware\McpApi\Model\CouponManagement"/>
+    <preference for="Ayasoftware\McpApi\Api\SeoManagementInterface" type="Ayasoftware\McpApi\Model\SeoManagement"/>
 </config>

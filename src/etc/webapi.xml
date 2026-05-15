@@ -48,4 +48,40 @@
             <resource ref="Ayasoftware_McpApi::coupon"/>
         </resources>
     </route>
+    <route url="/V1/mg_seo_audit_product/:sku" method="GET">
+        <service class="Ayasoftware\McpApi\Api\SeoManagementInterface" method="auditProduct"/>
+        <resources>
+            <resource ref="Ayasoftware_McpApi::seo"/>
+        </resources>
+    </route>
+    <route url="/V1/mg_seo_audit_category/:categoryId" method="GET">
+        <service class="Ayasoftware\McpApi\Api\SeoManagementInterface" method="auditCategory"/>
+        <resources>
+            <resource ref="Ayasoftware_McpApi::seo"/>
+        </resources>
+    </route>
+    <route url="/V1/mg_seo_detect_missing_meta_tags" method="POST">
+        <service class="Ayasoftware\McpApi\Api\SeoManagementInterface" method="detectMissingMetaTags"/>
+        <resources>
+            <resource ref="Ayasoftware_McpApi::seo"/>
+        </resources>
+    </route>
+    <route url="/V1/mg_seo_update_meta_title" method="POST">
+        <service class="Ayasoftware\McpApi\Api\SeoManagementInterface" method="updateMetaTitle"/>
+        <resources>
+            <resource ref="Ayasoftware_McpApi::seo"/>
+        </resources>
+    </route>
+    <route url="/V1/mg_seo_update_meta_description" method="POST">
+        <service class="Ayasoftware\McpApi\Api\SeoManagementInterface" method="updateMetaDescription"/>
+        <resources>
+            <resource ref="Ayasoftware_McpApi::seo"/>
+        </resources>
+    </route>
+    <route url="/V1/mg_seo_update_url_key" method="POST">
+        <service class="Ayasoftware\McpApi\Api\SeoManagementInterface" method="updateUrlKey"/>
+        <resources>
+            <resource ref="Ayasoftware_McpApi::seo"/>
+        </resources>
+    </route>
 </routes>

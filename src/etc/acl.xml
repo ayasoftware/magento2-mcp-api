@@ -6,6 +6,7 @@
                 <resource id="Ayasoftware_McpApi::mcpapi" title="Ayasoftware MCP API" sortOrder="10">
                     <resource id="Ayasoftware_McpApi::indexer" title="Indexer Management" sortOrder="10"/>
                     <resource id="Ayasoftware_McpApi::coupon" title="Coupon Management" sortOrder="20"/>
+                    <resource id="Ayasoftware_McpApi::seo" title="SEO Management" sortOrder="30"/>
                 </resource>
             </resource>
         </resources>

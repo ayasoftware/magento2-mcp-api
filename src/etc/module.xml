@@ -4,6 +4,9 @@
         <sequence>
             <module name="Magento_Indexer"/>
             <module name="Magento_SalesRule"/>
+            <module name="Magento_Catalog"/>
+            <module name="Magento_CatalogUrlRewrite"/>
+            <module name="Magento_UrlRewrite"/>
         </sequence>
     </module>
 </config>
